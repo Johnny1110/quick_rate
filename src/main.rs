@@ -2,6 +2,7 @@ use crate::settings::settings::get_settings;
 use crate::auth::auth::generate_auth;
 use crate::req::req::{send_market_req};
 use std::env;
+use std::path::PathBuf;
 
 mod settings;
 mod auth;
@@ -11,8 +12,11 @@ fn main() {
 
     let args: Vec<String> = env::args().collect();
 
-    let config_path = "./settings.yml";
-    let settings = get_settings(config_path);
+    let exe_path = env::current_exe().expect("Failed to get executable path");
+    let exe_dir = exe_path.parent().expect("Failed to get executable directory");
+    let config_path: PathBuf = exe_dir.join("settings.yml");
+
+    let settings = get_settings(config_path.to_str().unwrap());
 
     let mut symbol_pairs = String::new();
 

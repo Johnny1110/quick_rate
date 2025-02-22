@@ -53,7 +53,7 @@ like `rate -s BTC`
 
 ## Release
 
-Windows release-v1.0: [download](https://drive.google.com/file/d/1gybmCsD-kXdkJLRG8naVQiXI3oNvcb4t/view?usp=drive_link)
+Windows release-v1.0: [download](https://drive.google.com/file/d/16a72vWqbMfCsEa0OzmFxH70GhJKgrJ1H/view?usp=drive_link)
 
 Mac OS release-v1.0: [download]()
 
