@@ -21,21 +21,21 @@ put quick_rate bin file and settings.yml together.
 settings.yml example:
 
 ```yml
-api_key: xxxxxxxxxxxxxx # BTSE API Key (read)
-api_secret: xxxxxxxxxxxxxx # BTSE API Secret (read)
-symbol-pairs: BTC-USD,ETH-USD,DOT-USD,ADA-USD,BNB-USD,LINK-USD,STMX-USD
+api_key: xxxxxxxxxxxxxx # Optional BTSE API Key (read) if you don't have, it doesn't matter.
+api_secret: xxxxxxxxxxxxxx # Optional BTSE API Secret (read) if you don't have, it doesn't matter.
+symbol-pairs: BTC-USD,ETH-USD,DOT-USD,ADA-USD,BNB-USD,LINK-USD,STMX-USD # Mandatory
 ```
 
 api key and secret APPLY HERE. [DOC](https://btsecom.github.io/docs/spot/en/#generating-api-key)
 
 <br>
 
-## cli
+## CLI
 
 1. query symbols in settings
 
 ```
-quick_rate -d
+rate -d
 ```
 
 <br>
@@ -43,8 +43,17 @@ quick_rate -d
 2. query target symbol:
 
 ```
-quick_rate -s <SYMBOL>
+rate -s <SYMBOL>
 ```
 
-like `quick_rate -s BTC`
+like `rate -s BTC`
+
+<br>
+<br>
+
+## Release
+
+Windows release-v1.0: [download](https://drive.google.com/file/d/1gybmCsD-kXdkJLRG8naVQiXI3oNvcb4t/view?usp=drive_link)
+
+Mac OS release-v1.0: [download]()
 
