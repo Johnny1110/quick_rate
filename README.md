@@ -55,5 +55,9 @@ like `rate -s BTC`
 
 Windows release-v1.0: [download](https://drive.google.com/file/d/16a72vWqbMfCsEa0OzmFxH70GhJKgrJ1H/view?usp=drive_link)
 
-Mac OS release-v1.0: [download]()
+Mac OS release-v1.0: [download](https://drive.google.com/file/d/1-22AegujgGC5bN7koSEr77dqLWXXygeY/view?usp=drive_link)
+
+  * Unzip quick_rate.tar.gz and put it into the path: `~/lib/`
+  * `vim ~/.bashrc` and setup the env path: `export PATH="$HOME/lib/quick_rate:$PATH"`
+  * Active the .bashrc: `source ~/.bashrc`
 
